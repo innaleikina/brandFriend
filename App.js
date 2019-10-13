@@ -25,7 +25,7 @@ import React from 'react';
 import { Button,View, Text } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import DetailsScreen from "./app/screens/list"
+import ListScreen from "./app/screens/list"
 
 class HomeScreen extends React.Component {
   render() {
@@ -46,7 +46,7 @@ class HomeScreen extends React.Component {
 const RootStack = createStackNavigator(
   {
     Home: HomeScreen,
-    Details: DetailsScreen,
+    Details: ListScreen,
   },
   {
     initialRouteName: 'Home',
