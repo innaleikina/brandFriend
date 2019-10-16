@@ -3,8 +3,9 @@
 import React from 'react';
 import { Button,View, Text, TextInput
 } from 'react-native';
-import { createAppContainer } from 'react-navigation';
-import { createSwitchNavigator, createStackNavigator } from 'react-navigation-stack';
+import {  createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer} from 'react-navigation'
+
 import ListScreen from "./src/screens/List"
 import WelcomeScreen from './src/screens/WelcomeScreen'
 import SignUpScreen from './src/screens/SignUpScreen'
@@ -103,20 +104,14 @@ const AuthStackNavigator = createStackNavigator({
 })
 
 
-const RootStack = createStackNavigator(
-  {
-    // Home: WelcomeScreen,
-    // List: ListScreen,
-    AuthLoading: AuthLoadingScreen,
-    Auth: AuthStackNavigator,
 
-  },
-  // {
-  //   initialRouteName: 'Home',
-  // }
-);
-
-const AppContainer = createAppContainer(RootStack);
+// const RootStack = createStackNavigator(
+//   {
+//   Authloading: AuthLoadingScreen,
+//   Auth: AuthStackNavigator, // Auth stack
+//   }
+// );
+const AppContainer = createAppContainer(AuthStackNavigator);
 
 export default class App extends React.Component {
   render() {

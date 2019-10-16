@@ -5,7 +5,7 @@ import {
     View,
     Text,
   } from 'react-native'
-  export default class ForgotPassword extends React.Component {
+  export default class ForgotPasswordScreen extends React.Component {
     render() {
       return (
         <View style={styles.container}>

@@ -25,7 +25,7 @@ export default class WelcomeScreen extends React.Component {
           <Text style={styles.textStyle}>Sign in</Text>
         </TouchableOpacity>
         <TouchableOpacity 
-          onPress={() => this.props.navigation.navigate('ForgetPassword')}
+          onPress={() => this.props.navigation.navigate('ForgotPassword')}
           style={styles.buttonStyle}>
           <Text style={styles.textStyle}>Forget password ?</Text>
         </TouchableOpacity>
